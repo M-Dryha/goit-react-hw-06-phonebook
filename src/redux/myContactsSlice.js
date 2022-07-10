@@ -11,7 +11,6 @@ const myContactsSlice = createSlice({
   reducers: {
     addContacts(state, action) {
       state = [...state, action.payload];
-      localStorage.setItem('myContacts', JSON.stringify(state));
       return state;
     },
     deleteContacts(state, action) {
